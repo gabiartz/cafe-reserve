@@ -57,7 +57,7 @@ export default function HomePage() {
                 className="mx-auto rounded-full object-cover aspect-square"
               />
             </div>
-            <div className="inline-block px-8 py-3 bg-[#0a0a0a]/95 backdrop-blur-sm rounded-full mb-4 mt-0 md:-mt-4">
+            <div className="inline-block px-8 py-3 bg-[#0a0a0a]/95 backdrop-blur-sm rounded-full mb-4 -mt-1 md:-mt-4">
               <p className="text-[#c9a86c] text-sm tracking-[0.3em] uppercase">
                 Convite Exclusivo
               </p>
