@@ -1,29 +1,17 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import {
-  RSVPForm,
-  VacancyCounter,
+  CheckoutButton,
   DressCode,
   Hotels,
   Airports,
 } from "@/components";
-import { EVENT_CONFIG } from "@/lib/event-config";
+
+const HUBLA_CHECKOUT_URL = "https://pay.hub.la/Xx1ZEszBgoJjbT2u4N7p";
 
 export default function CompletoPage() {
-  const [confirmedSpots, setConfirmedSpots] = useState(0);
-
-  useEffect(() => {
-    fetch("/api/rsvp")
-      .then((res) => res.json())
-      .then((data) => {
-        setConfirmedSpots(data.confirmedSpots || 0);
-      })
-      .catch(() => {});
-  }, []);
-
   return (
     <main className="min-h-screen bg-[#0a0a0a]">
       {/* Back Link */}
@@ -58,20 +46,10 @@ export default function CompletoPage() {
         </div>
       </section>
 
-      {/* Vacancy Counter */}
-      <section className="py-10 px-4 bg-[#0d0d0d]">
+      {/* Checkout Section */}
+      <section id="checkout" className="py-12 px-4 bg-[#0d0d0d]">
         <div className="max-w-md mx-auto">
-          <VacancyCounter
-            totalSpots={EVENT_CONFIG.totalSpots}
-            confirmedSpots={confirmedSpots}
-          />
-        </div>
-      </section>
-
-      {/* RSVP Section */}
-      <section id="rsvp" className="py-12 px-4">
-        <div className="max-w-md mx-auto">
-          <RSVPForm />
+          <CheckoutButton hublaUrl={HUBLA_CHECKOUT_URL} />
         </div>
       </section>
     </main>
