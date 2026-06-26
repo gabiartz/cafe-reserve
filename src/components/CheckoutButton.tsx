@@ -38,7 +38,7 @@ export function CheckoutButton({ hublaUrl = "#" }: CheckoutButtonProps) {
           <div className="text-center mb-6">
             <p className="text-gray-400 text-sm line-through">De R$ 2.990</p>
             <p className="text-3xl font-bold text-[#c9a86c]">R$ 1.990</p>
-            <p className="text-white text-base font-bold">ou 12x de R$ 199,17</p>
+            <p className="text-white text-base font-bold">ou 12x de R$ 199,80</p>
           </div>
 
           <a
