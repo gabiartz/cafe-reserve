@@ -48,7 +48,7 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="mb-4 -mt-[2.8rem] md:-mt-12">
+            <div className="mb-4 -mt-[2.55rem] md:-mt-12">
               <Image
                 src="/logo-allexclusive.png"
                 alt="All Exclusive"
@@ -57,7 +57,7 @@ export default function HomePage() {
                 className="mx-auto rounded-full object-cover aspect-square"
               />
             </div>
-            <div className="inline-block px-8 py-3 bg-[#0a0a0a]/95 backdrop-blur-sm rounded-full mb-4 -mt-[1.42rem] md:-mt-4">
+            <div className="inline-block px-8 py-3 bg-[#0a0a0a]/95 backdrop-blur-sm rounded-full mb-4 -mt-[1.39rem] md:-mt-4">
               <p className="text-[#c9a86c] text-sm tracking-[0.3em] uppercase">
                 Convite Exclusivo
               </p>
