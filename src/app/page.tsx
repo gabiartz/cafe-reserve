@@ -48,7 +48,7 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="mb-4 -mt-[2.5rem] md:-mt-12">
+            <div className="mb-4 -mt-[2.25rem] md:-mt-12">
               <Image
                 src="/logo-allexclusive.png"
                 alt="All Exclusive"
